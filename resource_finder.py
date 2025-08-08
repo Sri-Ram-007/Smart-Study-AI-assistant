@@ -1,4 +1,3 @@
-# resource_finder.py
 import os
 import sys
 from dotenv import load_dotenv
@@ -74,7 +73,7 @@ def fetch_all_resources(topic: str) -> list:
     return videos + articles
 
 # Optional: test code
-if _name_ == "_main_":
+if __name__ == "__main__":
     topic = "Python programming"
     resources = fetch_all_resources(topic)
     for r in resources:
